@@ -1,0 +1,76 @@
+.gallery-filter .nav-pills {
+    /* Luxury soft pink glass container */
+    background: rgba(255, 221, 233, 0.75); /* light luxury pink */
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    padding: 0.9rem;
+    border-radius: 999px;
+
+    display: inline-flex;
+    gap: 0.75rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Pills */
+.gallery-filter .nav-pills .nav-link {
+    color: #5b2b3a; 
+    background: rgba(255, 255, 255, 0.55);
+
+    padding: 0.75rem 1.9rem;
+    border-radius: 999px;
+
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.2px;
+
+    transition: all 0.25s ease;
+
+    border: 1px solid rgba(255, 255, 255, 0.70);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Hover (clean luxury lift) */
+.gallery-filter .nav-pills .nav-link:hover {
+    color: #fff;
+    transform: translateY(-2px);
+
+    background: rgba(255, 143, 179, 0.95); /* pink hover */
+    border-color: rgba(255, 255, 255, 0.60);
+
+    box-shadow: 0 16px 35px rgba(255, 143, 179, 0.35);
+}
+
+/* Active (premium solid pink) */
+.gallery-filter .nav-pills .nav-link.active {
+    background: rgba(255, 111, 166, 0.98); /* rich pink */
+    color: #fff;
+
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    box-shadow: 0 18px 40px rgba(255, 111, 166, 0.35);
+}
+
+/* Icons */
+.gallery-filter .nav-pills .nav-link i {
+    margin-right: 8px;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .gallery-filter .nav-pills {
+        flex-direction: column;
+        border-radius: 18px;
+        gap: 0.6rem;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .gallery-filter .nav-pills .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+}

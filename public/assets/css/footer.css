@@ -1,0 +1,185 @@
+.footer-section {
+    position: relative;
+    width: 100%;
+    padding: 4rem 0 2rem;
+
+    /* Luxury soft light pink */
+    background: rgba(255, 235, 242, 0.95); /* blush pink */
+    color: #4b2330;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+}
+
+/* Soft shine / glass feel */
+.footer-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+
+    background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.75) 0%, transparent 55%),
+                radial-gradient(circle at 80% 70%, rgba(255,255,255,0.55) 0%, transparent 60%);
+    opacity: 0.55;
+}
+
+/* Make footer content above background effect */
+.footer-section .container,
+.footer-section .container-fluid {
+    position: relative;
+    z-index: 2;
+}
+
+/* Headings */
+.footer-section h5 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #2c0f18;
+    letter-spacing: 0.3px;
+}
+
+.footer-section span {
+    color: #D63384; /* updated accent */
+    font-weight: 900;
+}
+
+/* Footer paragraph */
+.footer-info p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: rgba(44, 15, 24, 0.75);
+}
+
+/* Links */
+.footer-links ul li,
+.footer-services ul li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links ul li a,
+.footer-services ul li a {
+    color: rgba(44, 15, 24, 0.72);
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.footer-links ul li a:hover,
+.footer-services ul li a:hover {
+    color: #D63384; /* updated accent */
+    padding-left: 6px;
+}
+
+/* Contact info */
+.contact-info li {
+    display: flex;
+    align-items: start;
+    margin-bottom: 1rem;
+    font-size: 0.92rem;
+    color: rgba(44, 15, 24, 0.75);
+}
+
+.contact-info li i {
+    margin-right: 10px;
+    color: #D63384; /* updated accent */
+    font-size: 1rem;
+}
+
+/* Hours list */
+.hours-list li {
+    font-size: 0.92rem;
+    color: rgba(44, 15, 24, 0.75);
+    margin-bottom: 0.5rem;
+}
+
+/* Divider */
+.footer-divider {
+    border-color: rgba(0, 0, 0, 0.08);
+    margin: 1.2rem 0;
+}
+
+/* Bottom text */
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: rgba(44, 15, 24, 0.65);
+    font-weight: 600;
+}
+
+/* Social links */
+.footer-section .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+
+    color: #D63384; /* updated accent */
+    font-size: 1.15rem;
+
+    transition: all 0.25s ease;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+}
+
+.footer-section .social-links a:hover {
+    transform: translateY(-3px);
+
+    background: #D63384; /* updated accent */
+    color: #fff;
+
+    box-shadow: 0 16px 35px rgba(214, 51, 132, 0.25); /* #D63384 shadow */
+}
+
+/* ===========================
+   SCROLL TO TOP - LUXURY PINK
+   Accent: #D63384
+=========================== */
+
+.scroll-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 46px;
+    height: 46px;
+
+    background: rgba(214, 51, 132, 0.95); /* #D63384 */
+    color: #fff;
+
+    text-align: center;
+    font-size: 18px;
+
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+
+    box-shadow: 0 14px 30px rgba(214, 51, 132, 0.30);
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-3px);
+    background: #D63384;
+    box-shadow: 0 18px 40px rgba(214, 51, 132, 0.40);
+}
+
+.scroll-to-top i {
+    line-height: 46px;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
